@@ -1,8 +1,12 @@
-# React + Vite
+# Portfolio for Dan J Blain
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This portfolio website represents Dan's first footprint in the frontend web development world
 
-Currently, two official plugins are available:
+The site contains:
+  - A homepage, for casual visitors interested in learning more about me
+  - About page, for a more in-depth history of Dan J Blain: work history, hobbies, etc.
+  - Contact page, to learn all the ways you may communicate with Dan, including a contact form
+  - Projects, an archive of all the completed projects Dan has ownership of
+  - Style page, for testing website colours and styles, a useful tool for any front-end web developer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+For more information, check out the site!  https://danjblain.dev/
