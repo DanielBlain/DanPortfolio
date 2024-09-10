@@ -1,36 +1,11 @@
-// Bottommost styles
+// Highest priority styles
 @use './base/reset';
+@use './base/root';
+@use './base/text';
 
-// Effects
+// Effects & Mixins
 @use './effects/screenreader';
+@use './mixins/mixins';
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-    background-color: blue;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-@media (prefers-color-scheme: light) {
-}
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,400;0,700;1,400&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');

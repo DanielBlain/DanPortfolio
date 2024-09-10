@@ -1,0 +1,18 @@
+@mixin uppercase {
+    text-transform: uppercase;
+}
+
+@mixin capitalize {
+    text-transform: capitalize;
+}
+
+@mixin flat {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin bandedText {
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}

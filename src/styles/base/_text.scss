@@ -1,0 +1,41 @@
+@use './vars' as *;
+
+// Header elements
+h1, h2, h3, h4, h5, h6 {
+    font-family: $fontfam-headers;
+    font-weight: 400;
+}
+
+code {
+    font-family: $fontfam-code;
+}
+
+// Block text elements
+// p
+// address
+// blockquote
+// pre
+
+// Inline body text elements
+// b
+// i
+// u
+// strong
+// em
+// q
+// abbr
+// cite
+// code
+
+// List and table elements
+// ol, ul - Ordered, unordered list (block elements)
+// li - List item
+// dl - Definition list (block element)
+// dt - Definition term
+// dd - Definition description
+// tbody - Table body
+// thead - Table head
+// tr - Table row
+// th - Table header cell
+// td - Table data cell
+// tfoot - Table foot

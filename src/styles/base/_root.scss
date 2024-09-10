@@ -1,0 +1,32 @@
+@use './vars' as *;
+
+:root {
+    --clr-text: #{$lgt-text};
+    --clr-background: #{$lgt-background};
+    --clr-accent: #{$lgt-accent};
+    --clr-accent-shade: #{$lgt-accent-shade};
+    --clr-ui-frames: #{$lgt-ui-frames};
+    --clr-ui-borders: #{$lgt-ui-borders};
+
+    color-scheme: light dark;
+    color: var(--clr-text);
+    background-color: var(--clr-background);
+    font-family: $fontfam-body;
+    line-height: 1.5;
+    font-weight: 400;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-text: #{$drk-text};
+        --clr-background: #{$drk-background};
+        // --clr-accent: #{$drk-accent};
+        // --clr-accent-shade: #{$drk-accent-shade};
+        // --clr-ui-frames: #{$drk-ui-frames};
+        // --clr-ui-borders: #{$drk-ui-borders};
+    }
+}
