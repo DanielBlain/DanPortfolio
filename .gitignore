@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Remove this later -- contains information I want to export from my obsolete homepage (the one we built near the beginning of the program)
+oldsite
+
 # Private environment variables
 .env
 

@@ -1,5 +1,5 @@
 // App-wide constants
-export const appName        = 'Portfolio of Dan J Blain'
+export const appName        = 'Dan J Blain Portfolio'
 export const author         = 'Dan J Blain'
 export const authorQuote    = 'Eppur Si Muove'
 export const baseFolder     = import.meta.env.BASE_URL
