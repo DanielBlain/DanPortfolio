@@ -1,12 +1,24 @@
+@use './vars-colors' as *;
 @use './vars' as *;
 
 // Header elements
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, nav ul {
+    margin: 0;
+    padding: 0;
     font-family: $fontfam-headers;
     font-weight: 400;
+    list-style: none;
 }
 
-code {
+h1 {
+    font-size: 3rem;
+}
+
+nav ul {
+    font-size: 2.8rem;
+}
+
+code, kbd {
     font-family: $fontfam-code;
 }
 

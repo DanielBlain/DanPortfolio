@@ -12,9 +12,38 @@ const PageStyle = () => {
             <p>Here is an <em>emphasized</em> text and <strong>strong</strong> text.</p>
             <p>A link to <a href='https://www.example.com' target='_blank' rel='noopener noreferrer'>Example.com</a></p>
             <blockquote cite='https://www.example.com'>This is a blockquote from a source.</blockquote>
+            <pre>This 
+                is preformatted
+                text!
+            </pre>
+            <code>
+                HTML code
+                void main ( int a, int b, int c )
+                etc
+            </code>
+            <p>
+                This is a keyboard button: <kbd>CTRL-A</kbd>
+            </p>
 
             <h2>Images</h2>
             <img src='/20240411_111604.jpg' alt='A poor drawing of a valiant knight wreathed in electrical magic' style={{maxWidth: 100+'px'}} />
+
+            <h2>Strange HTML tags</h2>
+            <abbr title="title tag can be used on every element">Careful, dunt work on mobile</abbr>
+            No backend value, just for SEO purposes, time tag: <time>22:23pm</time>
+            <ruby>
+                Test
+                <rt>Above text</rt>
+                <rp>Backup above text</rp>
+            </ruby>
+            <p>
+                Progress Tag
+                <progress max='100' value='60'></progress>
+            </p>
+            <p>
+                Metered Tag
+                <meter min='0' max='100' value='96' low='20' high='60' optimum='95'></meter>
+            </p>
 
             <h2>Form Elements</h2>
             <form>
@@ -54,6 +83,14 @@ const PageStyle = () => {
                     <option value='option1'>Option 1</option>
                     <option value='option2'>Option 2</option>
                     </select>
+
+                    <input type="input" className="colorSelect" list="colors" />
+                    <datalist id="colors">
+                        <option value="red"></option>
+                        <option value="blue"></option>
+                        <option value="brown"></option>
+                        <option value="green"></option>
+                    </datalist>
 
                     <button type='reset'>Reset</button>
                     <button type='submit'>Submit</button>

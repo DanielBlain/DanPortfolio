@@ -1,3 +1,4 @@
+@use './vars-colors' as *;
 @use './vars' as *;
 
 :root {
@@ -12,12 +13,25 @@
     color: var(--clr-text);
     background-color: var(--clr-background);
     font-family: $fontfam-body;
-    line-height: 1.5;
     font-weight: 400;
 
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    ul {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 @media (prefers-color-scheme: dark) {

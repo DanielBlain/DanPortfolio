@@ -1,14 +1,19 @@
-import React from 'react'       /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "[rR]eact" }]*/
-
+import React from 'react'
 import Nav from './Nav'
 
 
 const Header = () => {
     return (
-        <div>
-            Header
+        <header>
+            <h1>
+                <span className='title-highlight'>
+                    <a href='/'>
+                        Dan J Blain
+                    </a>
+                </span>
+            </h1>
             <Nav />
-        </div>
+        </header>
     )
 }
 
