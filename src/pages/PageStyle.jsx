@@ -1,4 +1,3 @@
-/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "[rR]eact" }]*/
 import React from 'react'
 
 
@@ -6,6 +5,122 @@ const PageStyle = () => {
     return (
         <div>
             <h1>Style Test Page</h1>
+            <section>
+                <form>
+                    <fieldset>
+                        <legend>Theme</legend>
+
+                        <p>
+                            <label htmlFor='themeName'>
+                                <div>
+                                    Name
+                                    <button>X</button>
+                                </div>
+                                <input type='input' list='themeList' id='themeName' />
+                                <datalist id='themeList'>
+                                    <option value='dan-informational'></option>
+                                </datalist>
+                            </label>
+                        </p>
+
+                        <p>
+                            <label htmlFor='personality'>
+                                <div>
+                                    Personality
+                                    <button>X</button>
+                                </div>
+                                <input type='text' id='personality' name='personality' />
+                                <div>
+                                    include bigger output of personality somewhere visible
+                                </div>
+                            </label>
+                        </p>
+
+                        <fieldset>
+                            <legend>Palette</legend>
+
+                            <label htmlFor='numColors'>
+                                <div>
+                                    Number of colors
+                                </div>
+                                <input type='radio' id='numColors2' name='radio' value='numColors2' />2
+                                <input type='radio' id='numColors3' name='radio' value='numColors3' />3
+                                <input type='radio' id='numColors4' name='radio' value='numColors4' />4
+                                <input type='radio' id='numColors5' name='radio' value='numColors5' />5
+                            </label>
+
+                            <label htmlFor='color'>Color Picker</label>
+                            <input type='color' id='color' name='color' />
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Metrics</legend>
+
+                            <label htmlFor='selectUnits'>
+                                <div>Units</div>
+                                <select id='selectUnits' name='selectUnits'>
+                                    <option value='rem'>rem</option>
+                                    <option value='em'>em</option>
+                                    <option value='px'>px</option>
+                                </select>
+                            </label>
+                            
+                            <label htmlFor='pageMargin'>
+                                <div>Page Margin</div>
+                                <input type='number' id='pageMargin' name='pageMargin' />
+                            </label>
+                            
+                            <label htmlFor='verticalRhythm'>
+                                <div>Vertical Rhythm</div>
+                                <input type='number' id='verticalRhythm' name='verticalRhythm' />
+                            </label>
+                            
+                            <div>Header Margins</div>
+                            <label htmlFor='h1Margins'>
+                                <input type='number' id='h1MarginTop' name='h1MarginTop' />
+                                <input type='number' id='h1MarginBottom' name='h1MarginBottom' />
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Header elements</legend>
+                        </fieldset>
+                        delineation as an expression of personality and theme:
+headers and titles
+whitespace usage
+section and paragraph breaks
+media queries
+depth of style: e.g. shadows and animation                        
+                    </fieldset>
+                </form>
+            </section>
+            <p>
+                The HTML should not be the PLANNING, but the RESULT of the following considerations. <br />
+                Brainstorming the things to consider:
+                <ul>
+                    <li>HTML IS BOTTOM-MOST LEVEL</li>
+                    <li>SECOND BOTTOM-MOST IS:</li>
+                    <li>vertical pacing</li>
+                    <li>section header design</li>
+                    <li>h1..h6 scale & design</li>
+                    <li>emphasis design</li>
+                    <li>page header design</li>
+                    <li>paragraph design</li>
+                    <li>sidebars design</li>
+                    <li>THIRD IS:</li>
+                    <li>personality</li>
+                    <li>theme</li>
+                    <li>delineation as an expression of personality and theme: <br />
+                        <ul>
+                            <li>headers and titles</li>
+                            <li>whitespace usage</li>
+                            <li>section and paragraph breaks</li>
+                            <li>media queries</li>
+                        </ul>
+                    </li>
+                    <li>depth of style: e.g. shadows and animation</li>
+                </ul>
+            </p>
 
             <h2>Text Elements</h2>
             <p>This is a <b>bold</b> text and this is <i>italic</i> text.</p>
